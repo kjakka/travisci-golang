@@ -1,4 +1,4 @@
-https://travis-ci.com/spremraj84/travisci-golang.svg?branch=master
+[![Build Status](https://travis-ci.com/spremraj84/travisci-golang.svg?branch=master)](https://travis-ci.com/spremraj84/travisci-golang)
 ## Repo to test all functionalities of github and Travis CI
 1. In settings for this repo protect the master branch
 2. Enable - Require pull request reviews before merging
