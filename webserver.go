@@ -9,7 +9,7 @@ var version string
 
 func handler(w http.ResponseWriter, r *http.Request) {
   fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
-  fmt.Fprinln(w,version)
+  fmt.Fprintf(w,version)
 }
 
 func main() {
