@@ -15,10 +15,10 @@
 1. Trying github releases because we can create a draft release build (stage) and production releases
 2. Install travis cli https://github.com/travis-ci/travis.rb#installation
 3. Configure the cli client to generate OAUTH API keys by running the command 'travis setup releases'
-travis setup releases --com
-Username: spremraj84
-Password for spremraj84: ************
-File to Upload:
-Deploy only from spremraj84/travisci-golang? |yes| yes
-Encrypt API key? |yes| yes
-4. The key will be automatically setup in .travis.yml file
+travis setup releases --com <br/>
+Username: spremraj84 <br/>
+Password for spremraj84: <br/>
+File to Upload: (outfput-file) <br/>
+Deploy only from spremraj84/travisci-golang? |yes| yes <br/>
+Encrypt API key? |yes| yes <br/>
+4. The key will be automatically setup in .travis.yml file <br/>
