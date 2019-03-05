@@ -11,3 +11,4 @@ deploy:
   file: webapp_spremraj
   on:
     repo: spremraj84/travisci-golang
+    tags: true
