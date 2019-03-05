@@ -1,7 +1,13 @@
 language: go
-
 go:
-  - "1.11.1"
-
+- 1.11.1
 script:
-  - "./build.sh"
+- "./build.sh"
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: EC8HjQDLRB58hxqUMaYCGCMiadYBG0wB3ddUlzUqQJijuSG5XA0iLEPHFhpbCdF3yfQ7GYyei7/cGdQM6Tfd0lWy4asrklWNTBQ71zsFfHVlFARIIPSnA99uGaq32JgRSW9RBcZG9zG9kZ0vRWR5W5undESQ0wo0TPELNzvTg9TLFQd4oreCI2rRCrNts+xh1QNog0ozDh4Md3OI1AJzmYkKl21462Kt1idac30hAFCnKxcWkZoeLCUP7pwD9G2PLD0vBqNS2d4RR3D2GcWYj6q3VsyKUNJ700fpEzTYYeGsQwtSdlVEq/7hkA+zzoePmtY+tn0kI94z/2M9loeRq6VC4fMIu+hMGI1hfYHT6ACLXOKvQKG0rG8scaEATUM3fa6K4HR7JXKfg0vpaO6H2enyVYA92U3EtIk5wiKLBymVqkKELSqhGMlcnFJEDCSwTMmZr7WINZJminMvEAI8Xm9oHzatD1ZOPrl3FZf83kDxPj9lXhl9GVaW/nxH69GNCP/jpWoCcqKgixWXnzF1oi5bvujhIx97wzE9ZmSn8QBPPdd+hXJC6ZfS55liVN1YfQLqpbkNwL+Jre8uxY/lJtAoqjn0o+PGAIkDAx5lwMvq09qTz9I9tuSDdOP30N6z3WkJvFige8H1IBzaiaE45vy2WiKUz7elhMZAZqdLXLQ=
+  file: webapp_spremraj
+  on:
+    repo: spremraj84/travisci-golang
