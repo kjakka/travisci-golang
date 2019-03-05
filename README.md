@@ -9,3 +9,16 @@
 1. Create .travis.yml file
 2. Create the build script that will be executed during CI
 3. Make sure the build script is set as executable "git update-index --add --chmod=+x build.sh", else build will fail with permission denied
+4. Tag the build for releases with the build command go build -o testproject -i -v -ldflags="-X main.version=$(git describe --always --long)" .
+
+## Deployment
+1. Trying github releases because we can create a draft release build (stage) and production releases
+2. Install travis cli https://github.com/travis-ci/travis.rb#installation
+3. Configure the cli client to generate OAUTH API keys by running the command 'travis setup releases'
+travis setup releases --com
+Username: spremraj84
+Password for spremraj84: ************
+File to Upload:
+Deploy only from spremraj84/travisci-golang? |yes| yes
+Encrypt API key? |yes| yes
+4. The key will be automatically setup in .travis.yml file
